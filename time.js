@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Define the folder where text files will be stored
 const textFilesFolder = path.join(__dirname, 'text_files');
